@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Samples</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+
+<body>
+	<div id="wrapper"> <!-- outer-most container -->
+		
+		<div id="logo"> <!-- logo container -->
+			<img class="bottom" src="images/logo1.png" alt="Spider Web Design" />
+			<img class="top" src="images/logo2.png" alt="Spider Web Design" />
+		</div>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<div id="nav"> <!-- navigation container -->
+			<a href="index.html"><img src="images/home.png" alt="home" /></a>&nbsp;&nbsp;<img src="images/web.png" alt="Web Break" class="break" />&nbsp;&nbsp;
+			<a href="examples.html"><img src="images/examples.png" alt="Cool Stuff" /></a>&nbsp;&nbsp;<img src="images/web.png" alt="Web Break" class="break" />&nbsp;&nbsp;
+			<a href="contact.html"><img src="images/contact.png" alt="Contact Us" /></a>
+		</div>
+		<div id="content"> <!-- content container -->
+			<div id="recent"> <!-- recent projects -->
+				<h1>Recent Projects</h1>
+				<img src="images/deadsea.jpg" alt="Dead Sea" />				
+				<img src="images/brokenarrow.png" alt="Broken Arrow" />
+				<img src="images/libraryalexandria.jpg" alt="Library of Alexandria" />
+				<img src="images/defenestration.jpg" alt="Defenestration" />
+			</div>
+			<hr class="hr-top" />
+			<hr class="hr-bottom" />
+			<div id="samples">
+				<h1>What We Can Do For You!</h1>
+				<p>Simple effects work wonders on a website. Combinations of some (or all!) of the examples below can add a little bit of excitement to your content.</p>
+				<div class="samples-left">
+					<h3>Animations</h3>
+					<p>Simple animations can add an extra level of 'zing' to your website.</p>
+					<div id="animations">
+						<div id="mover"></div>
+					</div>
+				</div>
+				<div class="samples-right">
+					<h3>2D Transitions</h3>
+					<p>Transitions can help to engage your users.</p>
+					<div id="2d-transitions">
+						<div id="basic">Mouse over for effect.</div>
+						<div id="transform">Mouse over for effect.</div>
+					</div>
+				</div>
+				<hr class="hr-top-small">
+				<hr class="hr-bottom-small">
+				<div class="samples-full">
+					<h3>Image Effects</h3>
+					<p>Image effects, like animations and transitions, create a dynamic object that are useful in capturing the interest of your users.</p>
+					<p style="text-align:center;">Hover over the images to see the effects.</p>
+					<div id="images1">
+						<img src="images/portrait1.jpg" alt="Fade In Text" class="portraits1" />
+						<div class="overlay">
+							<div class="text1">Fade In Overlay</div>
+						</div>
+					</div>
+					<div id="images2">
+						<img src="images/portrait2.jpg" alt="Fade In A Box" class="portraits2" />
+						<div class="middle">
+							<div class="text2">Fade In Overlay with Opacity</div>
+						</div>
+					</div>
+					<div id="images3">
+						<img src="images/portrait3.jpg" alt="Slide In Top" class="portraits3" />
+						<div class="overlay2">
+							<div class="text3">Slide Down Overlay</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br/>
+		<br/>
+		<div id="footer"> <!-- footer container -->
+			<!-- Javascript for modified date -->
+			<script>
+				months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
+				var d=new Date();
+				var weekday=new Array(7);
+				weekday[0]="Sunday";
+				weekday[1]="Monday";
+				weekday[2]="Tuesday";
+				weekday[3]="Wednesday";
+				weekday[4]="Thursday";
+				weekday[5]="Friday";
+				weekday[6]="Saturday";
+
+				var d = new Date();
+				(d.getFullYear());
+
+				var theDate = new Date(document.lastModified); 
+									
+				with (theDate) { 
+				document.write("Last updated: "+weekday[getDay()]+', '+getDate()+' '+months[getMonth()]+' '+d.getFullYear()) 
+								} 
+			</script>
+			<p>&#169; Spider Web Design</p>
+		</div>
+	</div>
+</body>
+</html>

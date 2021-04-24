@@ -1,0 +1,484 @@
+/*for entire body*/ 
+body {
+	background-image: url("images/backgroundimage.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	
+/*wrapper under body*/
+#wrapper {
+	width:90%;
+	margin:auto;
+	opacity: 0.8;
+	background-color:black;
+	}
+	
+/*All text will be Serif font type*/
+p {
+	font-family:serif;
+	color:white;
+	}
+h3{
+	font-family:serif;
+	color:white;
+	}	
+/*To add custom font for all headers*/
+@font-face {
+	font-family: myCustomfont;
+	src: url(spiderfont.ttf);
+	}
+h1 {
+	font-family:myCustomfont;
+	color:white;
+	}
+	
+/*logo section, where both logo are positioned top of each other and animated*/
+#logo {
+	position:relative;
+	width:50%;
+	margin:auto;
+	}
+
+#logo img {
+	position:absolute;
+	left:0;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	}
+
+@keyframes logoFadeInOut {
+	0% {
+	opacity:1;
+	}
+	
+45% {
+	opacity:1;
+	}
+55% {
+	opacity:0;
+	}
+100% {
+	opacity:0;
+	}
+	}
+
+#logo img.top {
+	animation-name: logoFadeInOut;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	}
+
+/*Navigation controlling*/
+#nav {
+	text-align:center;
+	}
+	
+/*To make all navigation button in same size.*/
+#nav img {
+	height:50px;
+	}
+	
+/*To make slighty transparent naviation button.*/
+#nav a:hover {
+	opacity:0.8;
+	}
+	
+/*For the home (index.html) page*/
+#content {
+	opacity:0.8;
+	}
+
+#content h1 {
+	text-align:center;
+	}
+/*Fot the stylish hr*/
+hr.hr-top { 
+  height: 30px; 
+  border-style:solid; 
+  border-color: #e8ac04; 
+  border-width: 0 0 2px 0;
+  border-radius: 20px; 
+} 
+hr.hr-top:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style:solid; 
+  border-color: #e8ac04; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+	
+hr.hr-bottom { 
+  height: 30px; 
+  border-style:solid; 
+  border-color: #e8ac04; 
+  border-width: 2px 0 0 0;
+  border-radius: 20px; 
+} 
+hr.hr-bottom:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style:solid; 
+  border-color: #e8ac04; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+
+hr.hr-top-small { 
+  height: 30px; 
+  border-style:solid; 
+  border-color: #e8ac04; 
+  border-width: 0 0 2px 0;
+  border-radius: 20px; 
+} 
+hr.hr-top-small:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style:solid; 
+  border-color: #e8ac04; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+	
+hr.hr-bottom-small { 
+  height: 30px; 
+  border-style:solid; 
+  border-color: #e8ac04; 
+  border-width: 2px 0 0 0;
+  border-radius: 20px; 
+} 
+hr.hr-bottom-small:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style:solid; 
+  border-color: #e8ac04; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+/*For the services grid*/
+#services {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	}
+.services-inner {
+	text-align: center;
+	}
+#services>h1{
+	grid-column: 1/4;
+	}
+#services img {
+	height:180px;
+	}
+	
+/*For examples page*/
+/*Sample grid*/
+#samples { 
+ width:100%; }
+
+.samples-left { 
+ float: left;
+ width:50%; 
+ 
+ } 
+
+ .samples-right{
+ float: right; 
+ width:50%;
+
+ }
+ hr.hr-top-small,hr.hr-bottom-small{
+	 float:left;
+	 width:100%;
+ }
+ .samples-full{
+	 width:100%;
+	 }
+/*All text in white color*/
+.samples-left{
+	color:white;
+	}
+	
+.samples-right{
+	color:white;
+	}
+	
+/* To make all images in same size*/
+#recent img {
+	width:285px;
+	height:214px;
+	padding-left:5px;
+	}
+#recent{
+	display: grid;
+	grid-template-columns:auto auto auto auto;
+	}
+#recent>h1{
+	grid-column: 1/5;
+	}
+/*Animations*/
+#mover {
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	position: relative;
+	animation-name: example;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	border-radius:10px;
+	}
+
+@keyframes example {
+	0%   {background-color:red; left:0px; top:0px;}
+	15%  {background-color:yellow; left:150px; top:0px;}
+	30%  {background-color:blue; left:300px; top:0px;}
+	45%  {background-color:green; left:450px; top:0px;}
+	60%  {background-color:blue; left:300px; top:0px;}
+	75%  {background-color:yellow; left:150px; top:0px;}
+	100% {background-color:red; left:0px; top:0px;}
+	}
+	
+
+/*For basic transition*/
+#basic {
+	width: 250px;
+	height: 50px;
+	transition-property: width;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+	transition-delay: 1s;
+	}
+
+#basic:hover {
+	width: 350px;
+	background: red;
+	font-size:150%;
+	}
+	
+/*For transform transition*/
+#transform {
+	width: 250px;
+	height: 50px;
+	transition: transform 1s;
+	}
+	
+#transform:hover {
+	background:green;
+	-ms-transform: rotate(360deg); /* IE 9 */
+	transform: rotate(360deg); /* Standard syntax */
+	font-size:150%;
+	}
+	
+/*Image effects*/
+/*To make all images in same size*/
+.samples-full img {
+	width:183px;
+	height:275px;
+	}
+/*For 3 by 1 grid*/
+.samples-full {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	}
+.samples-full>p{
+	grid-column: 1/4;
+	}
+
+/*First image effect*/
+#images1 {
+	position: relative;
+	padding-bottom:5px;
+	}
+
+.portraits1 {
+	display: block;
+	width: auto;
+	height: auto;
+	}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 275px;
+	width: 183px;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #008CBA;
+	}
+
+#images1:hover .overlay {
+	opacity: 1;
+	}
+
+.text1 {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	}
+/*Second image  effect*/
+#images2 {
+	position: relative;
+	padding-bottom:5px;	
+	}
+
+.portraits2 {
+	opacity: 1;
+	display: block;
+	width: 183px;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	}
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	height: auto;
+	width: 20%;
+	top: 50%;
+	left: 11%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	}
+
+#images2:hover .portraits2 {
+	opacity: 0.3;
+	}
+
+#images2:hover .middle {
+	opacity: 1;
+	}
+
+.text2 {
+	background-color: #4CAF50;
+	color: white;
+	height:100px;
+	font-size: 20px;
+	width:150px;
+	}
+/*For image3  effect*/
+#images3 {
+	position: relative;
+	}
+
+.portraits3 {
+	display: block;
+	width:183px;
+	height: auto;
+	}
+
+.overlay2 {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: #008CBA;
+	overflow: hidden;
+	width: 183px;
+	height:0px;
+	transition: .5s ease;
+	}
+
+#images3:hover .overlay2 {
+	bottom: 0;
+	height: 100%;
+	}
+
+.text3 {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	}
+	
+	
+/*For contact us page*/
+.form-left{
+	float:left;
+	width:50%;
+	}
+.form-right{
+	float:right;
+	width:50%;
+	}
+span.input-text {
+	color:white;
+	border-radius: 10px;
+	font-family:arial;
+	}
+	
+textarea {
+	color:black;
+	font-family:arial;
+	}
+	
+legend{
+	color:white;
+	}
+	
+span{
+	color:red;
+	}
+
+	
+/*Highlighted boder color when selected*/
+input:focus {
+    outline: none !important;
+	border-color: red;
+	}
+select:focus {
+    outline: none !important;
+	border-color: red;
+	}
+textarea:focus {
+    outline: none !important;
+	border-color: red;
+	}
+input[type=text]{
+	border-radius: 7px;
+	font-family:arial;
+	}
+	
+/*Rounded submit and reset button with company provided background color*/
+input[type=submit],[type=reset] {
+	background-color: #e8ac04;
+	width:150px;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/*For foorter div of all pages*/
+#footer{
+	margin:auto;
+	width:80%;
+	color:white;
+}

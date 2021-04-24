@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Home</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+
+<body>
+	<div id="wrapper"> <!-- outer-most container -->
+		
+		<div id="logo"> <!-- logo container -->
+			<img class="bottom" src="images/logo1.png" alt="Spider Web Design" />
+			<img class="top" src="images/logo2.png" alt="Spider Web Design" />
+		</div>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<div id="nav"> <!-- navigation container -->
+			<a href="index.html"><img src="images/home.png" alt="home" /></a>&nbsp;&nbsp;<img src="images/web.png" alt="Web Break" class="break" />&nbsp;&nbsp;
+			<a href="examples.html"><img src="images/examples.png" alt="Cool Stuff" /></a>&nbsp;&nbsp;<img src="images/web.png" alt="Web Break" class="break" />&nbsp;&nbsp;
+			<a href="contact.html"><img src="images/contact.png" alt="Contact Us" /></a>
+		</div>
+		<div id="content"> <!-- content container -->
+			<h1>Welcome to Spider Web Design</h1>
+			<p>We are here to make sure your design needs are met. No fluff and fancy promises, we just deliver. Our aim is to be fast, efficient and produce the best quality products for your business. We always go above and beyond our customers’ expectations because we treat your business as our own.</p>
+			<p>Our passionate team work endlessly to help your business harness the power of the web. From social media to WordPress training we ensure you are given the skills to continue long after we leave the picture. We are never too busy for a chat and we are happy to provide advice and recommendations.</p>
+			<p>At Spider Web Design we bring together our experience, energy and new age designs to provide our customers with creative and innovative solutions. Our highly skilled design professionals are committed to helping your business achieve its goals. We have a number of custom design solutions including website design, business branding and promotion, including logo and banner designs as well as social media marketing.</p>
+			<hr class="hr-top">
+			<hr class="hr-bottom">
+			<div id="services"> <!-- services container -->
+				<h1>Our Services</h1>
+				<div class="services-inner">
+					<img src="images/webDesign.jpg" alt="Web Design"/>
+					<h4>Web Design</h4>
+					<p>The look and feel of your website. <br/> Better design = more traffic!</p>
+				</div>
+				<div class="services-inner">
+					<img src="images/webDevelopment.jpg" alt="Web Development" />
+					<h4>Web Development</h4>
+					<p>Creation, implementation, maintenance - the whole package!</p>
+				</div>
+				<div class="services-inner">
+					<img src="images/appDevelopment.jpg" alt="App Development" />
+					<h4>App Development</h4>
+					<p>It's becoming a 'mobile' world - you've gotta keep up!</p>
+				</div>
+				<div class="services-inner">
+					<img src="images/graphicDesign.jpg" alt="Graphic Design" />
+					<h4>Graphic Design</h4>
+					<p>A picture speaks a thousand words - a good picture speaks more.</p>
+				</div>
+				<div class="services-inner">
+					<img src="images/seo.jpg" alt="Search Engine Optimisation" />
+					<h4>Search Engine Optimisation</h4>
+					<p>Get your site seen!</p>
+				</div>
+				<div class="services-inner">
+					<img src="images/socialMarketing.jpg" alt="Social Media Marketing" />
+					<h4>Social Media Marketing</h4>
+					<p>Get your content out there through multiple platforms!</p>
+				</div>
+			</div>
+		</div>
+		<br/>
+		<br/>
+		<div id="footer"> <!-- footer container -->
+			<!-- Javascript for modified date -->
+			<script>
+				months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
+				var d=new Date();
+				var weekday=new Array(7);
+				weekday[0]="Sunday";
+				weekday[1]="Monday";
+				weekday[2]="Tuesday";
+				weekday[3]="Wednesday";
+				weekday[4]="Thursday";
+				weekday[5]="Friday";
+				weekday[6]="Saturday";
+
+				var d = new Date();
+				(d.getFullYear());
+
+				var theDate = new Date(document.lastModified); 
+									
+				with (theDate) { 
+				document.write("Last updated: "+weekday[getDay()]+', '+getDate()+' '+months[getMonth()]+' '+d.getFullYear()) 
+								} 
+			</script>
+			<p>&#169; Spider Web Design</p>
+		</div>
+	</div>
+</body>
+</html>

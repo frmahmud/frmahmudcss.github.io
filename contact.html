@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contact Us</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+
+<body>
+	<div id="wrapper"> <!-- wrapper container -->
+		
+		<div id="logo"> <!-- logo container -->
+			<img class="bottom" src="images/logo1.png" alt="Spider Web Design" />
+			<img class="top" src="images/logo2.png" alt="Spider Web Design" />
+		</div>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<div id="nav">
+			<a href="index.html"><img src="images/home.png" alt="home" /></a>&nbsp;&nbsp;<img src="images/web.png" alt="Web Break" class="break" />&nbsp;&nbsp;
+			<a href="examples.html"><img src="images/examples.png" alt="Cool Stuff" /></a>&nbsp;&nbsp;<img src="images/web.png" alt="Web Break" class="break" />&nbsp;&nbsp;
+			<a href="contact.html"><img src="images/contact.png" alt="Contact Us" /></a>
+		</div>
+		<div id="content">
+			<h1>Contact Us</h1>
+			<p>Are you interested in anything you've seen? Would you like some more information? Why not drop us a message using our super-easy contact form below?</p>
+			<form action="mailto:administrator@spiderweb.com" method="post">
+				<fieldset>
+					<legend>Personal Information:</legend>
+					<div class="form-left">
+						<span class="input-text">Company Name:</span> &nbsp;&nbsp;<input type="text" name="company">
+						<br/>
+						<br/>
+						<span class="input-text">First Name</span> <span>*</span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" name="firstname">
+						<br/>
+						<br/>
+						<span class="input-text">Last Name</span> <span>*</span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" name="lastname">
+						<br/>
+						<br/>
+						<span class="input-text">Email</span> <span>*</span>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" name="email">
+					</div>
+					<div class="form-right">
+						<span class="input-text">Street Number:</span>&nbsp;&nbsp;
+						<input type="text" name="stnum">
+						<br/>
+						<br/>
+						<span class="input-text">Street Name:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" name="stname">
+						<br/>
+						<br/>
+						<span class="input-text">Suburb:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" name="suburb">
+						<br/>
+						<br/>
+						<span class="input-text">State:</span>
+						<br/>
+						<select name="state">
+							<option value="select" selected>Select....</option>
+							<option value="act">ACT</option>
+							<option value="nsw">NSW</option>
+							<option value="nt">NT</option>
+							<option value="qld">QLD</option>
+							<option value="sa">SA</option>
+							<option value="tas">TAS</option>
+							<option value="wa">WA</option>
+						</select>
+					</div>
+				</fieldset>
+				<br/>
+				<fieldset>
+					<legend>How can we help you?</legend>
+					<input type="radio" name="enquiry" value="general" checked> <span class="input-text">General Enquiry</span>
+					<br/>
+					<input type="radio" name="enquiry" value="services"> <span class="input-text">Services</span>
+					<br/>
+					<input type="radio" name="enquiry" value="pricing"> <span class="input-text">Pricing</span>
+					<br/>
+					<input type="radio" name="enquiry" value="other"> <span class="input-text">Other</span>
+					<br/>
+					<br/>
+					<p><span class="input-text">Additional Information:</span></p>
+					<textarea name="message" rows="10" cols="100" class="input-text"></textarea>
+				</fieldset>
+				<br/>
+				<input type="submit" value="Submit">
+				<input type="reset">
+			</form>
+		</div>
+		<br/>
+		<br/>
+		<div id="footer"> <!-- footer container -->
+			<!-- Javascript for modified date -->
+			<script>
+				months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
+				var d=new Date();
+				var weekday=new Array(7);
+				weekday[0]="Sunday";
+				weekday[1]="Monday";
+				weekday[2]="Tuesday";
+				weekday[3]="Wednesday";
+				weekday[4]="Thursday";
+				weekday[5]="Friday";
+				weekday[6]="Saturday";
+
+				var d = new Date();
+				(d.getFullYear());
+
+				var theDate = new Date(document.lastModified); 
+									
+				with (theDate) { 
+				document.write("Last updated: "+weekday[getDay()]+', '+getDate()+' '+months[getMonth()]+' '+d.getFullYear()) 
+								} 
+			</script>
+			<p>&#169; Spider Web Design</p>
+		</div>
+	</div>
+</body>
+</html>
